@@ -1,6 +1,5 @@
 package numpagespdf;
 
-
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
 import com.itextpdf.kernel.pdf.PdfWriter;
@@ -13,8 +12,8 @@ import java.io.File;
 
 
 public class StampPageXofY {
-    public static final String DEST = "./target/sandbox/stamper/stamp_page_x_of_y.pdf";
-    public static final String SRC = "./src/main/resources/pdfs/nameddestinations.pdf";
+    public static final String DEST = "C:\\Users\\Igor\\Downloads\\восточный2.pdf";
+    public static final String SRC = "C:\\Users\\Igor\\Downloads\\восточный.pdf";
 
     public static void main(String[] args) throws Exception {
         File file = new File(DEST);
