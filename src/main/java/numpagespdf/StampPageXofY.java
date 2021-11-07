@@ -7,10 +7,20 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 import java.io.File;
 
-
+/**
+ * @author Garri Haliz
+ * @version 1
+ */
 public class StampPageXofY {
+
     public static final String DEST = "C:\\Users\\Igor\\Downloads\\восточный2.pdf";
     public static final String SRC = "C:\\Users\\Igor\\Downloads\\восточный.pdf";
+
+    /**
+     *
+     * @param args
+     * @throws Exception
+     */
 
     public static void main(String[] args) throws Exception {
 //        File file = new File(DEST);
