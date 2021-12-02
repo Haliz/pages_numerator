@@ -82,7 +82,7 @@
                 <artifactId>hyph</artifactId>
                 <version>7.0.2</version>
             </dependency>
-    </dependencies>
+        </dependencies>
 
     <build>
         <plugins>
