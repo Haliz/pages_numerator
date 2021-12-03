@@ -11,7 +11,7 @@ import com.itextpdf.layout.property.VerticalAlignment;
 
 import java.io.IOException;
 
-public class TestPDF {
+public class NumeratorPDF {
     public static void main(String[] args) throws IOException {
         PdfReader reader = new PdfReader("C:\\projects\\pages_numerator\\src\\main\\java\\numpagespdf\\Пример 1.pdf");
         PdfDocument pdfDoc =

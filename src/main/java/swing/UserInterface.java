@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class NumeratorGUI {
+public class UserInterface {
     public static void main(String[] args) {
         JPanel panel = new JPanel();
         JFrame frame = new JFrame("Нумератор страниц отчетов(v1.0)");
