@@ -1,7 +1,6 @@
 package swing;
 
 import javax.swing.*;
-import java.awt.*;
 
 
 public class UserInterface {
@@ -12,8 +11,8 @@ public class UserInterface {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 //        Icon clicker = new ImageIcon("src/main/java/swing/Expert.png");
-        JLabel label = new JLabel("Нажмите на кнопку для выбора одного или нескольких "
-                + "отчетов в формате PDF", 0);
+        JLabel label = new JLabel("Для нумерации отчетов, выберете один или несколько "
+                + "сгенерированных ForApp файлов в формате PDF.", SwingConstants.CENTER);
         frame.add(panel);
         panel.add(label);
         JButton button = new JButton("Выбрать");
