@@ -1,10 +1,12 @@
 package swing;
 
+import numpagespdf.Main;
+
 import javax.swing.*;
 
 
-public class UserInterface {
-    public static void main(String[] args) {
+public class UserInterface implements GUI {
+    public  void showPanel() {
         JPanel panel = new JPanel();
         JFrame frame = new JFrame("Нумератор страниц отчетов(v1.0)");
         frame.setBounds(550, 250, 700, 100);
@@ -17,6 +19,7 @@ public class UserInterface {
         panel.add(label);
         JButton button = new JButton("Выбрать");
         panel.add(button);
+        button.addActionListener(new Main());
     }
 
 }

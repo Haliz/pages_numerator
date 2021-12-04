@@ -5,7 +5,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.File;
 
 public class Chooser {
-    public static void main(String[] args) {
+    File[] filesPath;
+
+    public void chooseFiles() {
         JFileChooser chooser = new JFileChooser();
         setUpdateUI(chooser);
         chooser.setMultiSelectionEnabled(true);
@@ -14,14 +16,14 @@ public class Chooser {
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
                 "PDF файлы", "pdf");
         chooser.setFileFilter(filter);
+        chooser.setAcceptAllFileFilterUsed(false);
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-            java.io.File[] files = chooser.getSelectedFiles();
+            filesPath = chooser.getSelectedFiles();
 //            java.io.File directory = chooser.getCurrentDirectory();
 //            System.out.println(directory);
-            for (File file : files) {
-                System.out.println(file.getPath());
-            }
-
+//            for (File file : files) {
+//                System.out.println(file.getPath());
+//            }
         }
     }
 
@@ -58,5 +60,10 @@ public class Chooser {
         choose.updateUI();
 
         return choose;
+    }
+
+    public File[] getFilesPath() {
+        this.chooseFiles();
+        return filesPath;
     }
 }
