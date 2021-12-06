@@ -12,17 +12,17 @@ import com.itextpdf.layout.property.VerticalAlignment;
 import java.io.IOException;
 
 public class NumeratorPDF {
-    public static void main(String[] args) throws IOException {
-        PdfReader reader = new PdfReader("C:\\projects\\pages_numerator\\src\\main\\java\\numpagespdf\\Пример 1.pdf");
+    public void execute(String source, String dest) throws IOException {
+        PdfReader reader = new PdfReader(source);
         PdfDocument pdfDoc =
                 new PdfDocument(reader,
-                        new PdfWriter("C:\\projects\\pages_numerator\\src\\main\\java\\numpagespdf\\Запись 1.pdf"));
+                        new PdfWriter(dest));
         Document doc = new Document(pdfDoc);
 // add content
         int numberOfPages = pdfDoc.getNumberOfPages();
         int k = 1;
         for (int i = 1; i <= numberOfPages; i++) {
-            String text = PdfTextExtractor.getTextFromPage(pdfDoc.getPage(i)); // Выцепляет текст из страницы (Потом поставить i)
+            String text = PdfTextExtractor.getTextFromPage(pdfDoc.getPage(i));
             // Write aligned text to the specified by parameters point
             String pattern = "ГЛАВГОССТРОЙНАДЗОР МОСКОВСКОЙ ОБЛАСТИ";
             if (text.contains(pattern)) {
