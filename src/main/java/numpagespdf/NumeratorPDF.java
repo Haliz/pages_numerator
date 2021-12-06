@@ -29,7 +29,7 @@ public class NumeratorPDF {
                 k = 1;
             }
             doc.showTextAligned(new Paragraph(String.format("%s", k++)),
-                    300, 10, i, TextAlignment.CENTER, VerticalAlignment.BOTTOM, 0);
+                    300, 5, i, TextAlignment.CENTER, VerticalAlignment.BOTTOM, 0);
         }
 
         pdfDoc.close();
