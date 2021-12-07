@@ -9,7 +9,7 @@ public class UserInterface implements GUI {
     public  void showPanel() {
         JPanel panel = new JPanel();
         JFrame frame = new JFrame("Нумератор страниц отчетов v1.0 (Made by Haliz)");
-        frame.setBounds(550, 350, 700, 100);
+        frame.setBounds(500, 300, 900, 100);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         JLabel label = new JLabel("Для нумерации отчетов, выберете один или несколько "
