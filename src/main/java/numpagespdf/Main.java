@@ -3,6 +3,7 @@ package numpagespdf;
 import swing.Chooser;
 import swing.GUI;
 import swing.UserInterface;
+import swing.UserInterface2;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +15,7 @@ public class Main implements ActionListener {
     File[] files;
 
     public static void main(String[] args) {
-        GUI gui = new UserInterface();
+        GUI gui = new UserInterface2();
         gui.showPanel();
     }
 
